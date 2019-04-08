@@ -36,10 +36,10 @@
   * enable gtk accel (Appearance->Settings->"Enable editable accelerators")
   * `mkdir -p ~/.config/xfce4/terminal`
   * edit `~/.config/xfce4/terminal/accels.scm`
-    *  **next tab**: ctrl (primary) + right
-    *  **last tab**: ctrl + left
-    *  **new tab**: ctrl + t
-    *  **close tab**: ctrl + w
+    * **next tab**: ctrl (primary) + right
+    * **last tab**: ctrl + left
+    * **new tab**: ctrl + t
+    * **close tab**: ctrl + w
 * Tweak workspace controls
   * open "Window Manager"->Keyboard
   * switch workspace: ctrl + alt + arrow
@@ -54,12 +54,12 @@
 ## Theming/Visual Tweaks
 
 * Theming
-  *  **icon pack**: papyrus-blue
-  *  **theme**: flat-plat-blue (dark-compact)
+  * **icon pack**: papyrus-blue
+  * **theme**: flat-plat-blue (dark-compact)
     * weird bug with google docs title being dark grey with this one :(
-  *  **cursor**: DMZ (XFCE White)
-  *  **system font**: Lato (10)
-  *  **mono font**: DejaVu Sans Mono Book (10)
+  * **cursor**: DMZ (XFCE White)
+  * **system font**: Lato (10)
+  * **mono font**: DejaVu Sans Mono Book (10)
 * Panel setup
   * install `xfce4-goodies`
     * go back and remove ones you don't want - was like 20 for me (like orage clock)
@@ -68,9 +68,9 @@
     * time then date, Lato (12) font
 * workspaces: 2x2
   * install `dockbarx` and `xfce4-dockbarx-plugin`
-    *  **theme**: Sunny Colors
-    *  **window list style**: Magic Transparency
-    *  **needs attn**: blink
+    * **theme**: Sunny Colors
+    * **window list style**: Magic Transparency
+    * **needs attn**: blink
   * remove original window buttons/etc.
   * add second panel
     * bottom-right
