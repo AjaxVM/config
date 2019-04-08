@@ -1,0 +1,47 @@
+#!/bin/bash
+
+# === config env vars
+
+# MESA - screw mesa...
+export MESA_GL_VERSION_OVERRIDE=4.5
+export MESA_GLSL_VERSION_OVERRIDE=450
+
+
+# === functions and such
+
+function gitcb() {
+    # sourced from https://github.com/AjaxVM/misc_scripts (git-cleanup-branches.sh)
+    # will probably do something different with that repo at some point to just reference these
+
+    remote_url=$(git config --get remote.origin.url)
+
+    can_develop=$(git ls-remote --heads $remote_url develop | wc -l)
+
+    if [ $can_develop == "1" ]; then
+        git checkout develop
+    else
+        git checkout master
+    fi
+
+    if [ "$?" -ne 0 ]; then
+        echo "Cannot checkout to root (master or develop)"
+        return 1
+    fi
+
+    git pull
+    can_pull="$?"
+
+    if [ "$can_pull" -ne 0 ]; then
+        echo "Cannot pull most recent from root"
+        return 2
+    fi
+
+    git branch --merged | egrep -v "(^\*|master|dev)" | xargs git branch -d
+
+    if [ "$?" -ne 0 ]; then
+        echo "Cannot delete branches"
+        return 3
+    fi
+    echo "Finished, remaining branches are:"
+    git branch
+}
