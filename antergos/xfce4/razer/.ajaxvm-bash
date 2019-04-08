@@ -2,7 +2,7 @@
 
 # === config env vars
 
-# MESA - screw mesa...
+# MESA - wt...f...? seems strange to need to set this but ok...
 export MESA_GL_VERSION_OVERRIDE=4.5
 export MESA_GLSL_VERSION_OVERRIDE=450
 
