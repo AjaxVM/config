@@ -17,7 +17,7 @@
 * Install Razer Drivers/RGB controls
   * install `openrazer-meta` (AUR)
   * install `dkms` (AUR) - if not already
-  * `sudo dkms install razer_chroma_driver/1.0.0
+  * `sudo dkms install razer_chroma_driver/1.0.0`
     * I installed `linux-headers` which is apparently sometimes needed by dkms, not sure if needed or not here
   * install `razercommander-git` (AUR)
 * Ensure bluetooth is disabled (didn't install drivers so think that is ok with installer)
