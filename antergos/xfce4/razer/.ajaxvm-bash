@@ -45,3 +45,6 @@ function gitcb() {
     echo "Finished, remaining branches are:"
     git branch
 }
+
+# replace sublime command with one that appends to the currently open window
+alias subl="subl -a"
