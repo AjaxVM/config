@@ -37,9 +37,12 @@
   * `mkdir -p ~/.config/xfce4/terminal`
   * edit `~/.config/xfce4/terminal/accels.scm`
     * **next tab**: ctrl (primary) + right
+        This conflicted with usability... need to find another way or change terminal to support ctrl+tab
     * **last tab**: ctrl + left
+        ditto above
     * **new tab**: ctrl + t
     * **close tab**: ctrl + w
+    * **new window**: ctrl + n
 * Tweak workspace controls
   * open "Window Manager"->Keyboard
   * switch workspace: ctrl + alt + arrow
